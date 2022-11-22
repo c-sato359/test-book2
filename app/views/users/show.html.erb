@@ -1,0 +1,15 @@
+<h1>Users#show</h1>
+<p>Find me in app/views/users/show.html.erb</p>
+
+<%= flash[:notice] %>
+
+<%= f.file_field :image, accept: "image/*" %>
+
+<h2>title</h2>
+<p><%= @book.title %></p>
+
+<h2>body</h2>
+<p><%= @book.body %></p>
+
+<%= link_to "edit", edit_book_path(@book.id) %>
+<%= link_to "Back", books_path %>
